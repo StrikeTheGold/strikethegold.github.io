@@ -1,0 +1,88 @@
+body {
+	background-color:#242424;
+	color:#ffbd00;
+	font-family: futura-pt, sans-serif;
+	font-style: normal;
+	font-weight: 1000;
+}
+.title {
+	text-align: center;
+	font-size: 29;
+	margin: 9;
+}
+.hosts {
+	text-align: center;
+	position: relative;
+	bottom: 10;
+}
+.br {
+    line-height: 1px;
+}
+.center {
+	text-align: center;
+}
+.boltEpisode {
+	display: block;
+	width:600;
+	height:330;
+	 margin: 0 auto;
+	 border: 0;
+}
+.Return {
+	text-align: center;
+}
+/*button animation*/
+.draw-border {
+  box-shadow: inset 0 0 0 3px #58afd1;
+  color: #58afd1;
+  transition: color 0.2s 0.0833333333s;
+  position: relative;
+}
+.draw-border::before, .draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+.draw-border::before {
+  border-bottom-width: 3px;
+  border-left-width: 3px;
+}
+.draw-border::after {
+  border-top-width: 3px;
+  border-right-width: 3px;
+}
+.draw-border:hover {
+  color: #ffbd00;
+}
+.draw-border:hover::before, .draw-border:hover::after {
+  border-color: #ffbd00;
+  transition: border-color 0s, width 0.2s, height 0.2s;
+  width: 100%;
+  height: 100%;
+}
+.draw-border:hover::before {
+  transition-delay: 0s, 0s, 0.2s;
+}
+.draw-border:hover::after {
+  transition-delay: 0s, 0.2s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'futura-pt', sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+}
+.btn:focus {
+  outline: 2px dotted #ffbd00;
+}
+/*END button animation*/
